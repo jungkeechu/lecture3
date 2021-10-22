@@ -7,15 +7,16 @@
 */
 
 void setup(){
-  size(600, 600);
-  stroke(128);
+  size(512, 512);
 }
 
 void draw(){
   int col = 0; // local variable
   
   while(col < width){
+    stroke(col/2);
+    //stroke(col/2, 0, 0);
     line(col, 0, col, height);
-    col += 5;
+    col ++;
   }
 }

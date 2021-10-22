@@ -1,5 +1,5 @@
 /* 
-1. random()
+1. random() function
 2. float data type
 */
 

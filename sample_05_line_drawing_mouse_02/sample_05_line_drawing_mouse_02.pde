@@ -12,6 +12,8 @@ void setup(){
 }
 
 void draw(){
-  //stroke(mouseX, mouseY, 0);
-  line(width/2, height/2, mouseX, mouseY);
+  if (mousePressed){
+    line(width/2, height/2, mouseX, mouseY);
+    //ellipse(mouseX, mouseY, 50, 50);
+  }
 }
