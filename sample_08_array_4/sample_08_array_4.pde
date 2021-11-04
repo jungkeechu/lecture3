@@ -1,17 +1,17 @@
-int [] arrayOfDiam;
-float [] arrayOfCentX, arrayOfCentY;
+int [] diam;
+float [] centX, centY;
 
 void setup() {
   size(600, 600);
   background(180);
-  arrayOfDiam = new int[10];
-  arrayOfCentX = new float[10];
-  arrayOfCentY = new float[10];
+  diam = new int[10];
+  centX = new float[10];
+  centY = new float[10];
   
   for (int i=0; i<10; i++) {
-    arrayOfDiam[i] = int(random(600));
-    arrayOfCentX[i] = random(600);
-    arrayOfCentY[i] = random(600);
+    diam[i] = int(random(600));
+    centX[i] = random(600);
+    centY[i] = random(600);
   }
   stroke(0);
   strokeWeight(5);
@@ -22,8 +22,8 @@ void setup() {
 void draw() {
   //background(180);
   for (int i=0; i<10; i++) {
-    ellipse(arrayOfCentX[i], arrayOfCentY[i], arrayOfDiam[i], arrayOfDiam[i]);
-    arrayOfDiam[i] += 10;
-    arrayOfDiam[i] %= width;
+    ellipse(centX[i], centY[i], diam[i], diam[i]);
+    diam[i] += 10;
+    diam[i] %= width;
   }
 }

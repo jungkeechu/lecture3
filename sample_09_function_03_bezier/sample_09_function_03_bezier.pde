@@ -1,14 +1,12 @@
 void setup(){
-  size(400, 400);
+  size(600, 600);
   noFill();
 }
 
 void draw(){
   background(255);
-  noFill();
-  stroke(255, 102, 0);
-  line(340, 80, 40, 40);
-  line(360, 360, 60, 320);
-  stroke(0, 0, 0);
-  bezier(340, 80, 40, 40, 360, 360, 60, 320);
+  
+  bezier(100, 300, 300, 100, 500, 600, 700, 300);
+
+
 }

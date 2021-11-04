@@ -1,6 +1,5 @@
 // growing circles
 
-
 int diam = 10;
 float centX, centY;
 
