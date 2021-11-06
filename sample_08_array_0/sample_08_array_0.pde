@@ -1,3 +1,7 @@
+int [] chart = {50, 80, 11, 45, 90};
+for(int i=0; i<5; i++){
+  println(chart[i]);
+}
 int [] bricks = new int[10];
 
 for(int i=0; i<10; i++){
